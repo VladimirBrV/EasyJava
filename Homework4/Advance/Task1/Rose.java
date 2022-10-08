@@ -1,6 +1,6 @@
 package HomeWork.Homework4.Advance.Task1;
 
-public class Rose extends  Flowers implements Smelling  {
+public class Rose extends  Flowers implements Smelling,Blooming  {
 
     @Override
     public void smell() {

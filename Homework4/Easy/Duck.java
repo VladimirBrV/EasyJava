@@ -2,18 +2,14 @@ package HomeWork.Homework4.Easy;
 
 public class Duck implements  Flyable {
     boolean isInjured;
-    public Duck (boolean isInjured) {
-        this.isInjured=isInjured;
+    public Duck(boolean isInjured) {
+        this.isInjured = isInjured;
     }
-    public void fly  () {
+    public void fly() throws FlyException {
         if (isInjured == true) {
-            System.out.println("Я лечу");
-        } else if (isInjured == false) {
-            try {
-                FlyException.callExeptions();
-            } catch (Exception exception) {
-                System.out.println("Ошибка: Утка не может лететь так как подбито крыло");}
-            }
-
+            throw new FlyException ("Ошибка : Утка ранена летать не может ");
+        } else {
+            System.out.println("Утка улетела");
         }
     }
+}

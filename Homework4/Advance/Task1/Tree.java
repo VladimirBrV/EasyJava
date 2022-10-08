@@ -1,8 +1,8 @@
 package HomeWork.Homework4.Advance.Task1;
 
-public class Tree implements Smelling {
+public class Tree {
 
-    boolean cone ;
+  private boolean cone ;
 
     public Tree(boolean cone) {
         this.cone = true;

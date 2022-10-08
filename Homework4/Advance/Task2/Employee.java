@@ -2,7 +2,7 @@ package HomeWork.Homework4.Advance.Task2;
 
 public class Employee implements Have {
 
-    Watch watches;
+   private Watch watches;
 
     public Employee(Watch watches) {
         this.watches = watches;
@@ -11,5 +11,9 @@ public class Employee implements Have {
     @Override
     public void have() {
 
+    }
+
+    public Watch getWatches() {
+        return watches;
     }
 }
